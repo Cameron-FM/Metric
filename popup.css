@@ -60,6 +60,57 @@ body {
         transform: scale(1.05);
       }
 
+.autoBtnWrap{
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12;
+  vertical-align: middle;
+}
+
+input.autoBtn {
+  margin-left: 15x;
+  vertical-align: middle;
+  position: relative;
+  -webkit-appearance: none;
+  outline: none;
+  width: 47px;
+  height: 27px;
+  background-color: #fff;
+  border: 1px solid #D9DADC;
+  border-radius: 50px;
+  box-shadow: inset -20px 0 0 0 #fff;
+  transition: ease-in-out 0.1s;
+}
+
+  input.autoBtn:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    background: transparent;
+    width: 25px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+  }
+
+input.autoBtn:checked {
+  box-shadow: inset 20px 0 0 0 #4ed164;
+  border-color: #4ed164;
+  transition: ease-in-out 0.1s;
+}
+
+  input.autoBtn:checked:after {
+    left: 15px;
+    box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+  }
+
 .buttonContainer{
   display: flex;
   justify-content: center;
