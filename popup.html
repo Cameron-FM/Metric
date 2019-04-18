@@ -4,6 +4,7 @@
   <head>
     <link href="popup.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="popup.js"></script>
   </head>
 
@@ -11,27 +12,33 @@
 
     <div class="headerContainer">
       <img src=assets/cartoonChef.jpg>
-      <h1><span style="font-size: 46px">Metric</span><br>Measurement Convertion Tool</h1>
+      <h1><span style="font-size: 48px">Metric</span><br>Measurement Convertion Tool</h1>
     </div>
-
-    <div class="largeDivider"></div>
 
     <div class="pageOptionsWrap">
-      <div class="optionContainer"><a id ="pageBtn" href="popup.html">Dashboard</a></div>
+      <div class="optionContainer"><a id ="pageBtn" href="popup.html">Dashboard<i class="fas fa-tv"></i></a></div>
       <div class="vertDivider"></div>
-      <div class="optionContainer"><a id ="pageBtn" target="_blank" href="" >Notifications</a></div>
+      <div class="optionContainer"><a id ="pageBtn" target="_blank" href="" >Notifications<i class="fas fa-bell"></i></a></div>
     </div>
 
-    <div class="autoBtnWrap">
+    <div class="settingsWrap">
       <label for"autoBtn"> Auto Convert Measurments:
-        <input class="autoBtn" name="autoBtn" type="checkbox">
+        <input class="toggleSwitch" name="autoBtn" type="checkbox">
       </label>
-
     </div>
+
+    <div class = "settingsWrap">
+      <label for"highlightBtn"> Highlight Converted Measurments:
+        <input class="toggleSwitch" name="highlightBtn" type="checkbox">
+      </label>
+    </div>
+
+    <div class="smallDivider"> </div>
 
     <div class="buttonContainer">
-      <button id="convertBtn">Convert</button>
+      <button id="convertBtn"><span>Enable</span></button>
     </div>
+
 
   </body>
 </html>
