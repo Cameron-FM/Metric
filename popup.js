@@ -1,5 +1,7 @@
-document.getElementById('convertBtn').onclick = function(){
-  chrome.tabs.executeScript({
-    code: 'alert("yayy");
-  });
-}​;
+window.onload=function(){
+  document.getElementById('convertBtn').addEventListener("click", function(){
+      chrome.tabs.executeScript({
+        file: 'contentScript.js'
+      })
+    });
+}
